@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feiern & Veranstaltungen — Café Kunsthalle Baden-Baden</title>
+<meta name="description" content="Hochzeiten, Geburtstage, Jubiläen, Musik- und Tanzveranstaltungen, Firmenfeiern — feiern Sie im Café Kunsthalle an der Lichtentaler Allee in Baden-Baden.">
+<meta property="og:title" content="Feiern & Veranstaltungen — Café Kunsthalle Baden-Baden">
+<meta property="og:description" content="Hochzeiten, Geburtstage, Jubiläen, Musik- und Tanzveranstaltungen, Firmenfeiern — feiern Sie im Café Kunsthalle an der Lichtentaler Allee in Baden-Baden.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="loader" id="loader"><div class="loader-mark"><img src="assets/img/logo.svg" alt=""><span>Café Kunsthalle</span></div></div>
+<header class="nav" id="nav" data-threshold="0.3">
+  <div class="nav-in">
+    <a href="index.html" class="logo" aria-label="Café Kunsthalle — Startseite">
+      <img src="assets/img/logo.svg" alt="Café Kunsthalle Logo">
+      <span class="logo-type">Café <i>Kunsthalle</i></span>
+    </a>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="das-cafe.html">Das Café</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="speisekarte.html">Speisekarte</a>
+      <a href="feiern.html" class="active">Feiern</a>
+      <a href="reservierung.html" class="nav-cta">Reservieren</a>
+    </nav>
+    <button class="burger" id="bg" aria-label="Menü" onclick="mNav()"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="m-nav" id="mn">
+  <a href="index.html" onclick="mNav()">Startseite <small>01</small></a>
+  <a href="das-cafe.html" onclick="mNav()">Das Café <small>02</small></a>
+  <a href="ueber-uns.html" onclick="mNav()">Über uns <small>03</small></a>
+  <a href="speisekarte.html" onclick="mNav()">Speisekarte <small>04</small></a>
+  <a href="feiern.html" onclick="mNav()">Feiern <small>05</small></a>
+  <a href="reservierung.html" onclick="mNav()" style="color:var(--gold-deep)">Reservieren <small>→</small></a>
+</div>
+<section class="page-hero">
+  <div class="hero-img"><img class="px" src="assets/img/nacht.jpg" alt="Das Café Kunsthalle bei Nacht, festlich beleuchtet" fetchpriority="high"></div>
+  <div class="hero-content wrap" style="max-width:1440px;margin:0 auto;position:relative;z-index:2">
+    <div class="crumb"><a href="index.html">Startseite</a> <span>→</span> Feiern</div>
+    <h1>Ihr Fest, im Herzen der <em>Allee.</em></h1>
+  </div>
+</section>
+<section class="block">
+  <div class="wrap">
+    <div class="fete-grid">
+      <div class="fete-copy rv">
+        <div class="eyebrow"><span class="num">01</span> Feiern & Veranstaltungen</div>
+        <p class="big-p" style="font-family:var(--serif);font-size:clamp(22px,2vw,30px);line-height:1.5;margin:30px 0 28px">Feiern Sie mit uns im Herzen der Lichtentaler Allee — entspannt, stilvoll, <em style="font-style:italic;color:var(--gold-deep)">unvergesslich.</em></p>
+        <p>Wir gestalten Ihren Anlass individuell mit Ihnen: von der Menüauswahl über die Raumgestaltung bis zum musikalischen Rahmen. Auf Wunsch exklusiv — das ganze Haus, die Terrasse oder beides.</p>
+        <p>Sprechen Sie uns an: <a href="tel:+497221392000" style="color:var(--gold-deep);text-decoration:none;font-weight:600">07221 392 000</a> oder <a href="mailto:info@cafe-kunsthalle.de" style="color:var(--gold-deep);text-decoration:none;font-weight:600">info@cafe-kunsthalle.de</a></p>
+        <div style="margin-top:44px">
+          <a href="reservierung.html" class="btn btn-dark">Unverbindlich anfragen <span class="a">→</span></a>
+        </div>
+        <div class="fete-photo rv">
+          <img src="assets/img/gastgeber.jpg" alt="Die Gastgeber des Café Kunsthalle" loading="lazy">
+        </div>
+      </div>
+      <div class="rv" data-d="1">
+        <div class="fete-list">
+          <a class="fete-item" href="feiern/hochzeiten.html">
+            <span class="no">i.</span>
+            <h3>Hochzeiten</h3>
+            <span class="arr-c">→</span>
+            <p>Ihr schönster Tag vor der Kulisse der Kunsthalle — von der freien Trauung auf der Terrasse bis zum festlichen Dinner.</p>
+          </a>
+          <a class="fete-item" href="feiern/geburtstage.html">
+            <span class="no">ii.</span>
+            <h3>Geburtstage</h3>
+            <span class="arr-c">→</span>
+            <p>Vom intimen Kaffeekranz bis zur großen Runde — wir richten Ihren Ehrentag so aus, wie er zu Ihnen passt.</p>
+          </a>
+          <a class="fete-item" href="feiern/jubilaeen.html">
+            <span class="no">iii.</span>
+            <h3>Jubiläen</h3>
+            <span class="arr-c">→</span>
+            <p>Besondere Meilensteine verdienen einen besonderen Rahmen — feiern Sie sie über den Dächern der Allee.</p>
+          </a>
+          <a class="fete-item" href="feiern/musik-tanz.html">
+            <span class="no">iv.</span>
+            <h3>Musik- & Tanzveranstaltungen</h3>
+            <span class="arr-c">→</span>
+            <p>Livemusik, Tanzabende, kleine Konzerte — unser Haus bietet die Bühne für stimmungsvolle Abende.</p>
+          </a>
+          <a class="fete-item" href="feiern/firmenfeiern.html">
+            <span class="no">v.</span>
+            <h3>Firmenfeiern</h3>
+            <span class="arr-c">→</span>
+            <p>Weihnachtsfeier, Teamevent oder Empfang — repräsentativ feiern, nur wenige Minuten vom Zentrum Baden-Badens.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block voices" id="stimmen">
+  <div class="wrap">
+    <div class="voices-head rv">
+      <div>
+        <div class="eyebrow">Stimmen</div>
+        <h2>Was unsere Gäste <em>erzählen.</em></h2>
+      </div>
+      <div class="v-score">
+        <div class="n">4,3</div>
+        <div class="s">★★★★★</div>
+        <small>79 Bewertungen auf Google</small>
+      </div>
+    </div>
+    <div class="v-grid">
+      <article class="v-card rv" data-d="1">
+        <div class="qm">„</div>
+        <blockquote>Dieses Café eignet sich durch die große Terrasse und den Balkon bestens für einen ruhigen Aufenthalt. Die Lage an der Lichtentaler Allee ist traumhaft.</blockquote>
+        <div class="by"><div class="st">★★★★★</div><b>Jo Schwarz</b><span>Local Guide · Google</span></div>
+      </article>
+      <article class="v-card rv" data-d="2">
+        <div class="qm">„</div>
+        <blockquote>Der Kaffee und der Kuchen schmecken sehr gut. Die Terrassen mit Blick auf die Lichtentaler Allee sind ein echter Geheimtipp!</blockquote>
+        <div class="by"><div class="st">★★★★★</div><b>Elisabeth</b><span>Gast · Google</span></div>
+      </article>
+      <article class="v-card rv" data-d="3">
+        <div class="qm">„</div>
+        <blockquote>Tolles Ambiente, aufmerksames Personal und wirklich gutes Essen — das Preis-Leistungs-Verhältnis stimmt absolut.</blockquote>
+        <div class="by"><div class="st">★★★★☆</div><b>Markus K.</b><span>Gast · Google</span></div>
+      </article>
+    </div>
+    <div class="v-foot rv">
+      <p>Echte Bewertungen unserer Gäste auf Google.</p>
+      <a href="https://www.google.com/search?sca_esv=d7a897ae2fa4bc83&rlz=1C5CHFA_enDE888DE888&cs=1&sxsrf=APpeQnuJPXgJzvbMxH1YgwNrALMSKE6pfg:1783429594193&q=Cafe+Kunsthalle+Rezensionen&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDSzNDM2MDQ0MbO0MDA2NjcxsdzAyPiKUdo5MS1Vwbs0r7gkIzEnJ1UhKLUqNa84Mz8vNW8RKz5ZAGcwIZlXAAAA&rldimm=11696301146980337449&tbm=lcl&hl=de-DE&sa=X&ved=2ahUKEwiFhsT70MCVAxWqBdsEHdEmCCkQ9fQKegQICBAG&biw=1440&bih=740&dpr=2#lkt=LocalPoiReviews" target="_blank" rel="noopener">Alle Rezensionen lesen</a>
+    </div>
+  </div>
+</section>
+<section class="cta-banner">
+  <div class="bg"><img class="px" src="assets/img/terrasse.jpg" alt="" aria-hidden="true" loading="lazy"></div>
+  <div class="wrap">
+    <div class="eyebrow rv">Ihr Anlass</div>
+    <h2 class="serif rv" data-d="1" style="color:#fff">Lassen Sie uns <em style="color:var(--gold)">planen.</em></h2>
+    <p class="rv" data-d="2">Erzählen Sie uns von Ihrem Fest — wir melden uns persönlich mit einem Vorschlag.</p>
+    <a href="reservierung.html" class="btn btn-light rv" data-d="3">Anfrage senden <span class="a">→</span></a>
+  </div>
+</section>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="logo-type">Café <i>Kunsthalle</i></span>
+        <p>Einzigartige Verbindung von Kunst und Genuss — inmitten der Staatlichen Kunsthalle an der Lichtentaler Allee in Baden-Baden.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/CafeKunsthalleBadenBaden/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/cafekunsthalle.badenbaden/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="das-cafe.html">Das Café</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="speisekarte.html">Speisekarte</a></li>
+          <li><a href="feiern.html">Feiern</a></li>
+          <li><a href="reservierung.html">Reservieren</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Feiern</h4>
+        <ul>
+          <li><a href="feiern/hochzeiten.html">Hochzeiten</a></li>
+          <li><a href="feiern/geburtstage.html">Geburtstage</a></li>
+          <li><a href="feiern/jubilaeen.html">Jubiläen</a></li>
+          <li><a href="feiern/musik-tanz.html">Musik & Tanz</a></li>
+          <li><a href="feiern/firmenfeiern.html">Firmenfeiern</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Lichtentaler Allee 8A · 76530 Baden-Baden</li>
+          <li style="margin-top:12px"><a href="tel:+497221392000">07221 392 000</a></li>
+          <li><a href="tel:+4917340456780">0173 4045678</a></li>
+          <li><a href="tel:+491734269142">0173 4269 142</a></li>
+          <li style="margin-top:12px"><a href="mailto:info@cafe-kunsthalle.de">info@cafe-kunsthalle.de</a></li>
+          <li style="margin-top:12px">Di – So <i>· 10:00 – 18:00</i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Café Kunsthalle · Baden-Baden</span>
+      <nav>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservierung & Kontakt — Café Kunsthalle Baden-Baden</title>
+<meta name="description" content="Reservieren Sie Ihren Tisch im Café Kunsthalle Baden-Baden — telefonisch, per E-Mail oder über unser Anfrageformular. Lichtentaler Allee 8A.">
+<meta property="og:title" content="Reservierung & Kontakt — Café Kunsthalle Baden-Baden">
+<meta property="og:description" content="Reservieren Sie Ihren Tisch im Café Kunsthalle Baden-Baden — telefonisch, per E-Mail oder über unser Anfrageformular. Lichtentaler Allee 8A.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="loader" id="loader"><div class="loader-mark"><img src="assets/img/logo.svg" alt=""><span>Café Kunsthalle</span></div></div>
+<header class="nav" id="nav" data-threshold="0.3">
+  <div class="nav-in">
+    <a href="index.html" class="logo" aria-label="Café Kunsthalle — Startseite">
+      <img src="assets/img/logo.svg" alt="Café Kunsthalle Logo">
+      <span class="logo-type">Café <i>Kunsthalle</i></span>
+    </a>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="das-cafe.html">Das Café</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="speisekarte.html">Speisekarte</a>
+      <a href="feiern.html">Feiern</a>
+      <a href="reservierung.html" class="nav-cta">Reservieren</a>
+    </nav>
+    <button class="burger" id="bg" aria-label="Menü" onclick="mNav()"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="m-nav" id="mn">
+  <a href="index.html" onclick="mNav()">Startseite <small>01</small></a>
+  <a href="das-cafe.html" onclick="mNav()">Das Café <small>02</small></a>
+  <a href="ueber-uns.html" onclick="mNav()">Über uns <small>03</small></a>
+  <a href="speisekarte.html" onclick="mNav()">Speisekarte <small>04</small></a>
+  <a href="feiern.html" onclick="mNav()">Feiern <small>05</small></a>
+  <a href="reservierung.html" onclick="mNav()" style="color:var(--gold-deep)">Reservieren <small>→</small></a>
+</div>
+<section class="page-hero">
+  <div class="hero-img"><img class="px" src="assets/img/kellner.jpg" alt="Service im Café Kunsthalle" fetchpriority="high"></div>
+  <div class="hero-content wrap" style="max-width:1440px;margin:0 auto;position:relative;z-index:2">
+    <div class="crumb"><a href="index.html">Startseite</a> <span>→</span> Reservierung</div>
+    <h1>Wir freuen uns <em>auf Sie.</em></h1>
+  </div>
+</section>
+<section class="block res">
+  <div class="wrap">
+    <div class="res-grid">
+      <div class="res-side rv">
+        <div class="eyebrow"><span class="num">01</span> Kontakt</div>
+        <h2 class="serif">Direkt <em>erreichen.</em></h2>
+        <p>Für Gruppen ab zehn Personen und besondere Anlässe empfehlen wir eine Reservierung. Rufen Sie uns an oder senden Sie eine Anfrage — wir melden uns persönlich bei Ihnen.</p>
+        <div class="res-lines">
+          <a href="tel:+497221392000"><small>Festnetz</small><b>07221 392 000</b></a>
+          <a href="tel:+4917340456780"><small>Mobil</small><b>0173 4045678</b></a>
+          <a href="tel:+491734269142"><small>Mobil</small><b>0173 4269 142</b></a>
+          <a href="mailto:info@cafe-kunsthalle.de"><small>E-Mail</small><b>info@cafe-kunsthalle.de</b></a>
+          <div class="row"><small>Adresse</small><b>Lichtentaler Allee 8A<br>76530 Baden-Baden</b></div>
+          <div class="row"><small>Öffnungszeiten</small><b>Di – So · 10 bis 18 Uhr</b></div>
+        </div>
+      </div>
+
+      <div class="res-card rv" data-d="1">
+        <h3>Anfrage senden</h3>
+        <p>Unverbindlich — wir bestätigen Ihre Reservierung persönlich.</p>
+        <div class="fg" id="rf">
+          <div class="ff"><label for="n1">Name</label><input type="text" id="n1" autocomplete="name" placeholder="Ihr Name"></div>
+          <div class="ff"><label for="n2">Telefon</label><input type="tel" id="n2" autocomplete="tel" placeholder="Für Rückfragen"></div>
+          <div class="ff"><label for="n3">E-Mail</label><input type="email" id="n3" autocomplete="email" placeholder="ihre@mail.de"></div>
+          <div class="ff"><label for="n4">Personen</label>
+            <select id="n4">
+              <option>2 Personen</option><option>1 Person</option><option>3 Personen</option><option>4 Personen</option>
+              <option>5 – 9 Personen</option><option>10+ Personen / Feier</option>
+            </select>
+          </div>
+          <div class="ff"><label for="n5">Datum</label><input type="date" id="n5"></div>
+          <div class="ff"><label for="n6">Uhrzeit</label>
+            <select id="n6">
+              <option>10:00</option><option>10:30</option><option>11:00</option><option>11:30</option>
+              <option>12:00</option><option selected>12:30</option><option>13:00</option><option>13:30</option>
+              <option>14:00</option><option>14:30</option><option>15:00</option><option>15:30</option>
+              <option>16:00</option><option>16:30</option><option>17:00</option>
+            </select>
+          </div>
+          <div class="ff w"><label for="n7">Ihre Nachricht <span style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--ink-3)">(optional)</span></label><textarea id="n7" placeholder="Anlass, Sonderwünsche, Allergien …"></textarea></div>
+        </div>
+        <div class="res-send">
+          <button class="btn btn-dark" onclick="sendRes()">Anfrage absenden <span class="a">→</span></button>
+          <p>Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Angaben zur Bearbeitung der Anfrage zu.</p>
+        </div>
+        <div class="res-ok" id="ok">Vielen Dank für Ihre Anfrage. Wir melden uns in Kürze persönlich bei Ihnen.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="map">
+  <div class="map-gate" id="mg">
+    <div class="eyebrow center">Anfahrt</div>
+    <h3>So finden Sie uns</h3>
+    <address>Lichtentaler Allee 8A · 76530 Baden-Baden</address>
+    <p>Zum Schutz Ihrer Daten wird die Google-Maps-Karte erst nach Ihrer Zustimmung geladen. Beim Laden werden Daten an Google übertragen.</p>
+    <button class="btn btn-dark" onclick="loadMap()">Karte laden <span class="a">→</span></button>
+  </div>
+  <iframe id="mf" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2630.222873215689!2d8.235832215850866!3d48.75854001568583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47971f42f8baf60d%3A0xa2519bec6bc1c729!2sCafe%20Kunsthalle!5e0!3m2!1sde!2sde!4v1639650187236!5m2!1sde!2sde" title="Café Kunsthalle auf Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="logo-type">Café <i>Kunsthalle</i></span>
+        <p>Einzigartige Verbindung von Kunst und Genuss — inmitten der Staatlichen Kunsthalle an der Lichtentaler Allee in Baden-Baden.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/CafeKunsthalleBadenBaden/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/cafekunsthalle.badenbaden/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="das-cafe.html">Das Café</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="speisekarte.html">Speisekarte</a></li>
+          <li><a href="feiern.html">Feiern</a></li>
+          <li><a href="reservierung.html">Reservieren</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Feiern</h4>
+        <ul>
+          <li><a href="feiern/hochzeiten.html">Hochzeiten</a></li>
+          <li><a href="feiern/geburtstage.html">Geburtstage</a></li>
+          <li><a href="feiern/jubilaeen.html">Jubiläen</a></li>
+          <li><a href="feiern/musik-tanz.html">Musik & Tanz</a></li>
+          <li><a href="feiern/firmenfeiern.html">Firmenfeiern</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Lichtentaler Allee 8A · 76530 Baden-Baden</li>
+          <li style="margin-top:12px"><a href="tel:+497221392000">07221 392 000</a></li>
+          <li><a href="tel:+4917340456780">0173 4045678</a></li>
+          <li><a href="tel:+491734269142">0173 4269 142</a></li>
+          <li style="margin-top:12px"><a href="mailto:info@cafe-kunsthalle.de">info@cafe-kunsthalle.de</a></li>
+          <li style="margin-top:12px">Di – So <i>· 10:00 – 18:00</i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Café Kunsthalle · Baden-Baden</span>
+      <nav>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
