@@ -368,7 +368,13 @@ h2.serif {
 .gal-band figure:nth-child(5) { grid-column: 9 / 13; grid-row: span 2; }
 
 /* ================= STIMMEN ================= */
-.voices { background: var(--ink); color: var(--paper); }
+.voices {
+  background:
+    radial-gradient(1000px 520px at 88% -5%, rgba(196,123,42,0.18), transparent 62%),
+    radial-gradient(700px 400px at 0% 105%, rgba(196,123,42,0.08), transparent 55%),
+    linear-gradient(180deg, #1a1610 0%, #131009 100%);
+  color: var(--paper);
+}
 .voices .eyebrow { color: var(--gold); }
 .voices .eyebrow .num { color: rgba(249,247,243,0.4); }
 .voices-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 48px; margin-bottom: 90px; }
@@ -840,3 +846,26 @@ a.fete-item { text-decoration: none; color: inherit; cursor: pointer; }
 .wa-float svg { width: 30px; height: 30px; fill: #fff; }
 .wa-float:hover { transform: translateY(-4px) scale(1.06); box-shadow: 0 16px 44px rgba(20,18,15,0.34); }
 @media (max-width: 560px) { .wa-float { right: 18px; bottom: 18px; width: 54px; height: 54px; } }
+
+
+/* ================= STIMMEN — FARBE & LEBEN ================= */
+.v-score .s, .v-card .by .st {
+  color: #e79f3c;
+  text-shadow: 0 0 22px rgba(231,159,60,0.5);
+}
+.v-card .by { display: flex; align-items: center; gap: 16px; border-top: 1px solid rgba(249,247,243,0.14); padding-top: 24px; }
+.v-card .by .av {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e79f3c, #8f5310);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 600; letter-spacing: 0.05em;
+  color: #fff;
+  flex-shrink: 0;
+  box-shadow: 0 6px 18px rgba(196,123,42,0.35);
+}
+.v-card .by .by-t { display: flex; flex-direction: column; gap: 3px; }
+.g-ic { display: inline-block; vertical-align: -3px; margin-right: 9px; }
+.v-card { transition: transform 0.5s var(--e); }
+.v-card:hover { transform: translateY(-6px); }
+.v-card:hover .qm { color: #e79f3c; }
