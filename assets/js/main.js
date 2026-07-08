@@ -14,9 +14,10 @@
 
   /* Nav: transparent über Hero, solide beim Scrollen */
   var nav = document.getElementById('nav');
-  var threshold = parseFloat(nav.getAttribute('data-threshold') || '0.72');
+  var t = parseFloat(nav.getAttribute('data-threshold') || '64');
   function onScroll() {
-    nav.classList.toggle('solid', window.scrollY > window.innerHeight * threshold);
+    /* t < 0: Navigation immer solide (Seiten ohne Bild-Hero) */
+    nav.classList.toggle('solid', t < 0 || window.scrollY > 64);
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -29,15 +30,28 @@
     document.body.style.overflow = m.classList.contains('open') ? 'hidden' : '';
   };
 
-  /* Reservierungsformular (Demo-Bestätigung) */
+  /* Reservierungsformular — oeffnet WhatsApp mit vorformulierter Anfrage */
   window.sendRes = function () {
-    var n = document.getElementById('n1');
-    var m = document.getElementById('n3');
-    var t = document.getElementById('n2');
-    if (!n || !n.value.trim() || (!m.value.trim() && !t.value.trim())) {
+    var v = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
+    var name = v('n1'), tel = v('n2'), mail = v('n3');
+    if (!name || (!mail && !tel)) {
       alert('Bitte geben Sie Ihren Namen sowie E-Mail oder Telefonnummer an.');
       return;
     }
+    var lines = [
+      'Reservierungsanfrage — Café Kunsthalle',
+      '',
+      'Name: ' + name,
+      tel ? 'Telefon: ' + tel : null,
+      mail ? 'E-Mail: ' + mail : null,
+      'Personen: ' + v('n4'),
+      v('n5') ? 'Datum: ' + v('n5') : null,
+      'Uhrzeit: ' + v('n6'),
+      v('n7') ? '' : null,
+      v('n7') ? 'Nachricht: ' + v('n7') : null
+    ].filter(function (l) { return l !== null; });
+    var url = 'https://wa.me/491734045678?text=' + encodeURIComponent(lines.join('\n'));
+    window.open(url, '_blank', 'noopener');
     document.getElementById('ok').style.display = 'block';
     var rf = document.getElementById('rf');
     rf.style.opacity = '0.3';
